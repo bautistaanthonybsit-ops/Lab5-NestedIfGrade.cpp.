@@ -1,0 +1,27 @@
+//# Lab5-NestedIfGrade.cpp.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int grade;
+
+    cout << "Enter grade: ";
+    cin >> grade;
+
+    if (grade >= 75) {
+        if (grade >= 90)
+            cout << "Remark: Excellent" << endl;
+        else if (grade >= 80)
+            cout << "Remark: Very Good" << endl;
+        else
+            cout << "Remark: Satisfactory" << endl;
+    } else {
+        cout << "Remark: Fail" << endl;
+    }
+
+    return 0;
+}
+
+//Guide Questions
+//#1.The nesting are putting one if statement, it focuses in subcondition while the if-else is independent condition.
+//#2.In nested condition there are decision within decision. For example Excellent, or Very Good if the student are passed.
